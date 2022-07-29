@@ -1,0 +1,9 @@
+::ng-deep{
+    mat-dialog-container{
+        border-radius: 10px !important;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}

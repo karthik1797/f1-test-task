@@ -1,0 +1,6 @@
+<h1>Race list for {{year}}</h1>
+<div class="race-main">
+    <ng-container *ngFor="let race of races">
+        <app-race [roundData]="race"></app-race>
+    </ng-container>
+</div>

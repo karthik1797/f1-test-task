@@ -1,0 +1,42 @@
+.driver{
+    h1{
+        color:#ff2957;
+        font-weight: 600;
+    }
+
+    ul{
+        background-color: #fff;
+        box-shadow: 0 0 15px rgba(0,0,0, .05);
+        padding: 15px 30px;
+        border-radius: 10px;
+
+        li{
+            letter-spacing: 1px;
+            line-height: 30px;
+        }
+
+        
+    }
+}
+
+.button{
+    padding: 10px 35px;
+    border: none;
+    background-color: #ff2957;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 30%;
+
+    display: block;
+
+    &:focus{
+        outline: none;
+    }
+}
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+    
+}

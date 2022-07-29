@@ -1,0 +1,42 @@
+<h1>Final Result</h1>
+<ng-container>
+    <table class="table">
+        <thead class="thead-light">
+
+            <tr align="center">
+                <th>Driver Name</th>
+                <th>Position</th>
+                <th>Points</th>
+                <th>Driver Number</th>
+                <th>DOB</th>
+                <th>Nationality</th>
+
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr align="center" *ngFor="let item of inputdata">
+                <td>
+                    {{ item.Driver.givenName }} {{ item.Driver.familyName }}
+                </td>
+                <td>
+                    {{ item.position}}
+                </td>
+                <td>
+                    {{item.points}}
+                </td>
+                <td>
+                    {{item.number}}
+                </td>
+                <td>
+                    {{ item.Driver.dateOfBirth }}
+                </td>
+                <td>
+                    {{ item.Driver.nationality }}
+
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+</ng-container>

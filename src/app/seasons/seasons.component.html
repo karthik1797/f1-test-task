@@ -1,0 +1,25 @@
+<div class="main-container">
+    <div class="container">
+        <div class="list-of-seasons">
+            <h1>List Of seasons</h1>
+
+            <ng-container *ngFor="let season of listOfSeason">
+                <ul>
+                    <li>
+                        <h2>{{season.season}}</h2>
+                        <span [routerLink]="['/season', season.season]" routerLinkActive="router-link-active">Open
+                            Season
+                            Details </span>
+                    </li>
+                </ul>
+            </ng-container>
+        </div>
+    </div>
+    <div class="container">
+        <div class="bonus">
+            <app-bonus></app-bonus>
+        </div>
+    </div>
+
+
+</div>

@@ -1,0 +1,27 @@
+.main {
+  padding: 50px 20px;
+
+  .list-of-season {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 45% 1fr;
+    width: 75%;
+    margin: auto;
+  }
+}
+
+.button {
+  padding: 10px 35px;
+  border: none;
+  background-color: #ff2957;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+
+  display: block;
+
+  &:focus {
+    outline: none;
+  }
+}

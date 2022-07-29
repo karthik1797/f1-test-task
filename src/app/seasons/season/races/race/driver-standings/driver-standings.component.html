@@ -1,0 +1,21 @@
+<h1>Driver Standings</h1>
+<table class="table">
+    <thead class="thead-light">
+        <tr align="center">
+            <th> Position </th>
+            <th> Name </th>
+            <th> DOB </th>
+            <th> Nationality </th>
+            <th> Wins </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr align="center" *ngFor="let item of driverStanding">
+            <td> {{item.position}} </td>
+            <td> {{ item.Driver.givenName }} {{ item.Driver.familyName }} </td>
+            <td> {{ item.Driver.dateOfBirth }} </td>
+            <td> {{ item.Driver.nationality }} </td>
+            <td> {{ item.wins }} </td>
+        </tr>
+    </tbody>
+</table>

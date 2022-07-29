@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif !important;
+}
+body {
+  margin: 0;
+  background-color: #f7f7f7;
+}
+h1 {
+  color: #ff2957;
+  font-weight: 600 !important;
+}
+
+ul {
+  margin-bottom: 20px;
+}
+
+li {
+  list-style: none;
+  font-size: 16px;
+}

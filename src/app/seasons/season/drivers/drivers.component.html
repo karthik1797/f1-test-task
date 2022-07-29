@@ -1,0 +1,32 @@
+<h1>Drivers list for {{year}}</h1>
+
+<table class="table">
+    <thead class="thead-light">
+        <tr align="center">
+            <th>Name</th>
+            <th>Nationality</th>
+            <th>Date Of Birth</th>
+            <th>Permanent Number</th>
+        </tr>
+    </thead>
+    <tr align="center" *ngFor="let driver of drivers">
+        <td>
+            {{driver.familyName}} {{driver.givenName}}
+        </td>
+        <td>
+            {{driver.nationality}}
+        </td>
+        <td>
+            {{driver.dateOfBirth}}
+        </td>
+        <td>
+            {{driver.permanentNumber}}
+        </td>
+    </tr>
+</table>
+
+<div class="btns">
+    <button class="button" (click)="loadPreviousDriverList()">previous</button>
+    <span>page {{currentPage}} of {{totalPage}} </span>
+    <button class="button" (click)="loadNextDriverList()">next</button>
+</div>

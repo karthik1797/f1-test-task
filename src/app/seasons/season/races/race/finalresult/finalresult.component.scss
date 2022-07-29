@@ -1,0 +1,20 @@
+.tbColCenter{
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    width: 100%;
+    overflow: auto;
+}
+
+::ng-deep{
+    mat-dialog-container{
+        border-radius: 10px !important;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
